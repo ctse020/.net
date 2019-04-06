@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns">
+        <group id="ctse" label="C-tse Toolbox">
+          <splitButton id="ExportEML" getVisible="GetVisible" size="large">
+            <button id="ExportEML__btn" imageMso="FileSave" label="Export to EML" />
+            <menu id="ExportEML__mnu">
+              <button id="ExportEMLMail" onAction="OnAction" label="As email (readonly)" supertip="As email (readonly)" getVisible="GetVisible" />
+              <button id="ExportEMLTemplate" onAction="OnAction" label="As editable template" supertip="As editable template" getVisible="GetVisible" />
+            </menu>
+          </splitButton>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
